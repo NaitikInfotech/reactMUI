@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link, useLocation } from 'react-router-dom';
 
-const pages = ['home', 'about', 'servises', 'solutions', 'portfolio', 'news', 'contect us', '+1 (800) 987 6543'];
+const pages = ['home', 'about', 'servises', 'solutions', 'portfolio', 'contect-us', '+1 (800) 987 6543'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function Nav() {
 

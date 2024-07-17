@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import { Box, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Slider() {
     return (
@@ -25,15 +26,18 @@ function Slider() {
                         <Typography variant='h6' color='white' sx={{ marginTop: '15px' }}>
                             This demo can be used by developer companies which want to present their real estate projects taking advantage of the Houzez features
                         </Typography>
-                        <Button sx={{
-                            width: { xs: '200px', sm: '250px', md: '250px', lg: "300px" }, height: "50px", color: "white", backgroundColor: "#16bfbfab",
-                            '&:hover': {
-                                backgroundColor: '#16BFBF'
-                            }
-                            , marginTop: "20px"
-                        }}>
-                            Request our brochure
-                        </Button>
+                        <Link to={"Contect-us"}>
+                            <Button sx={{
+                                width: { xs: '200px', sm: '250px', md: '250px', lg: "300px" }, height: "50px", color: "white", backgroundColor: "#16bfbfab",
+                                '&:hover': {
+                                    backgroundColor: '#16BFBF'
+                                }
+                                , marginTop: "20px"
+                            }}>
+                                Request our brochure
+                            </Button>
+                        </Link>
+
                     </Box>
 
                 </Box>

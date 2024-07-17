@@ -2,10 +2,11 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import React from 'react'
 import { FaBehance, FaFacebook, FaGoogle, FaInstagramSquare, FaLinkedinIn, FaPinterest, FaYelp, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <>
-            <Box sx={{ position: "relative",overflow:"hidden" }}>
+            <Box sx={{ position: "relative", overflow: "hidden" }}>
                 <Box sx={{ width: "100%", height: "100%", backgroundColor: '#00213ad0', position: "absolute", bottom: "0", zIndex: "2" }}>
                     <Box sx={{ width: "75%", margin: "auto", paddingTop: "50px" }}>
                         <Typography sx={{ fontSize: { xs: "30px", sm: "40px", md: "50px" }, display: "flex", flexWrap: "wrap", fontWeight: "600", color: "white", paddingTop: "60px", lineHeight: "1" }}>
@@ -14,26 +15,30 @@ function Footer() {
                         <Typography sx={{ fontSize: { xs: "17px", sm: "20px", md: "23px", textAlign: "center" }, fontWeight: "600", color: "white", marginTop: "50px", lineHeight: "1.2" }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque.
                         </Typography>
-                        <Button
-                            variant='contained'
-                            sx={{
-                                display: "flex",
-                                alignItems: "center",
-                                margin: "auto",
-                                width: '260px',
-                                height: { xs: '50px', sm: '60px' },
-                                marginTop: '20px',
-                                color: 'white',
-                                backgroundColor: '#16bfbfab',
-                                '&:hover': {
-                                    backgroundColor: '#16BFBF',
-                                },
-                            }}
-                        >
-                            Request a consultation
-                        </Button>
+                        <Link 
+                         to={"Contect-us"}>
+                            <Button
+                                variant='contained'
+                                sx={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    margin: "auto",
+                                    width: '260px',
+                                    height: { xs: '50px', sm: '60px' },
+                                    marginTop: '20px',
+                                    color: 'white',
+                                    backgroundColor: '#16bfbfab',
+                                    '&:hover': {
+                                        backgroundColor: '#16BFBF',
+                                    },
+                                }}
+                            >
+                                Request a consultation
+                            </Button>
+                        </Link>
+
                     </Box>
-                    <Grid container sx={{ justifyContent: "space-evenly", width: "100%", margin: "auto",color:"white",padding:"40px"}}>
+                    <Grid container sx={{ justifyContent: "space-evenly", width: "100%", margin: "auto", color: "white", padding: "40px" }}>
 
                         <Grid lg={1} sx={{ fontSize: "20px", display: "flex", justifyContent: "center", alignItems: "center" }}><FaFacebook />Facebook</Grid>
                         <Grid lg={1} sx={{ fontSize: "20px", display: "flex", justifyContent: "center", alignItems: "center" }}><FaXTwitter />twitter</Grid>
@@ -47,16 +52,16 @@ function Footer() {
 
 
                     </Grid>
-                    <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}><img src="https://demo18.houzez.co/wp-content/themes/houzez/img/logo-houzez-white.png" alt="" />
+                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}><img src="https://demo18.houzez.co/wp-content/themes/houzez/img/logo-houzez-white.png" alt="" />
                     </Box>
-                    <Typography sx={{display:"flex",justifyContent:"center",alignItems:"center",color:"white",marginTop:"40px"}}>
-                    © Houzez - All rights reserved</Typography>
+                    <Typography sx={{ display: "flex", justifyContent: "center", alignItems: "center", color: "white", marginTop: "40px" }}>
+                        © Houzez - All rights reserved</Typography>
                 </Box>
                 <Box sx={{
 
                     position: "relative",
                     backgroundImage: "url(https://demo18.houzez.co/wp-content/uploads/2020/09/image-6-584x438.jpg)",
-                    minHeight: "650px", 
+                    minHeight: "650px",
                     backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
@@ -66,7 +71,7 @@ function Footer() {
                     justifyContent: 'center',
                     padding: '0 20px',
                     overflow: "hidden",
-                    
+
 
                 }}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style={{ position: "absolute", top: "0", height: "50px", width: "100%", zIndex: "999" }}>

@@ -1,5 +1,6 @@
 import { Avatar, Box, Button, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Section4() {
     return (
@@ -29,6 +30,7 @@ function Section4() {
                             <Typography  sx={{fontSize:{xs:"17px",sm:"20px" ,md:"25px"}, fontWeight: "600", color: "white", marginTop: "20px",lineHeight:"1.2" }}>
                                 This demo can be used by  developer companies which want to  present their real estate projects  taking advantage of the Houzez  features
                             </Typography>
+                            <Link to={"Contect-us"}>
                             <Button
                                 variant='contained'
                                 sx={{
@@ -45,6 +47,8 @@ function Section4() {
                             >
                                 Request our brochure
                             </Button>
+                            </Link>
+                           
                         </Box>
                     </Grid>
                 </Grid>
