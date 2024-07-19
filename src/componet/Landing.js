@@ -9,6 +9,7 @@ import Section7 from './Section7'
 import Section8 from './Section8'
 import Section9 from './Section9'
 import Footer from './Footer'
+import Gotop from './gotop'
 
 function Landing() {
     return (
@@ -23,6 +24,7 @@ function Landing() {
             <Section8/>
             < Section9/>
             < Footer/>
+            <Gotop/>
         </>
     )
 }
